@@ -18,21 +18,21 @@
       style="height: 100vh"
     >
       <div width="300px">
-        <form class="form-control text-center" method="post" action="/signup">
+        <form class="form-control text-center" method="post" action="signup">
+          {% csrf_token %}
           <h1>Sign in to continue</h1>
           <label for="name" type="submit">Name</label>
-          <input class="form-control" name="myname" />
+          <input class="form-control" name="myname" id="myname" />
 
           <label for="email" type="submit">Email address</label>
-          <input class="form-control" name="myemail" />
+          <input class="form-control" name="myemail" id="myemail" />
 
           <label for="password" type="submit">Password</label>
-          <input class="form-control" name="mypassword" />
+          <input class="form-control" name="mypassword" id="mypassword" />
 
           <button class="btn btn-success" type="submit" name="a">
             Register
           </button>
-         
         </form>
       </div>
     </div>
