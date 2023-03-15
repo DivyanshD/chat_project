@@ -1,0 +1,3 @@
+-usermodel with name field
+-roommodel with name and user fields
+-meassagemodel with message, date, room, user

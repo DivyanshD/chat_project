@@ -2,8 +2,15 @@ from django.db import models
 from datetime import datetime
 
 # Create your models here.
+class UserModel(models.Model):
+    username = models.CharField(max_length=30)
+
+    def __str__(self):
+        return self.username
+
 class Room(models.Model):
-    name = models.CharField(max_length=255,blank=False)
+    Roomname = models.CharField(max_length=255,blank=False)
+    username = models.CharField(max_length=30)
 
     def __str__(self):
         return self.name
