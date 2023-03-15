@@ -1,2 +1,3 @@
-# chat_project 
-# this project is created with Django framework
+# chat_project
+
+## this project is created with Django framework
