@@ -20,7 +20,7 @@ from chats import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home, name='home'),
-    path('login',views.login, name='login'),
-    path('signup',views.signup, name='signup'),
-    path('logoutuser',views.logoutuser, name='logoutuser'),
+    # path('login',views.login, name='login'),
+    # path('signup',views.signup, name='signup'),
+    # path('logoutuser',views.logoutuser, name='logoutuser')
 ]
